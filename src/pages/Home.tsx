@@ -1,19 +1,15 @@
-
 import React from "react";
-import {Link, useNavigate} from "react-router-dom";
+import AppHeader from "../components/AppHeader";
+interface HomeProps {}
 
-interface HomeProps {
-    
-}
-
-const Home:React.FC = (): JSX.Element => {
-    const navigateTo = useNavigate();
-    return (
-        <React.Fragment>
-            <h1>Home works!</h1>
-        </React.Fragment>
-    );  
-}
+const Home: React.FC = (): JSX.Element => {
+  return (
+    <React.Fragment>
+      <section className="container-fluid">
+        <AppHeader></AppHeader>
+      </section>
+    </React.Fragment>
+  );
+};
 
 export default Home;
-    
