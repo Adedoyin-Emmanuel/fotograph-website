@@ -34,6 +34,7 @@
   --brand-small-text: 0.9rem;
   --brand-search-border-radius: 50px;
   --brand-button-outline-padding: 15px;
+  --brand-grey-color: #7c7c7c;
 }
 
 /*Brand primary utility classes*/
@@ -60,6 +61,10 @@ body {
 }
 .brand-text-primary-color {
   color: var(--brand-primary-light-color);
+}
+
+.brand-text-muted {
+  color: var(--brand-grey-color);
 }
 
 /*spinner component*/
@@ -179,6 +184,27 @@ body {
   color: var(--brand-white-color) !important;
 }
 
+.brand-heading-text {
+  background: linear-gradient(
+    90deg,
+    #73c3e2 0.09%,
+    #b9c0a5 34.99%,
+    #f0c79f 67.28%,
+    #f7f7f7 93.84%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.brand-small-text-3 {
+  font-size: 15px; /* Default font size for mobile phones */
+}
+
+@media (min-width: 768px) {
+  .brand-small-text-3 {
+    font-size: 17px; /* Font size for large screens */
+  }
+}
 /*custom responsiveness*/
 @media (min-width: 667.98px) {
   .width-toggle {
