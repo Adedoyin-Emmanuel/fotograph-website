@@ -6,7 +6,7 @@
 @font-face {
   font-family: Poppins;
   src: url("./assets/fonts/poppins_bold.ttf");
-  font-weight: bold !important;
+  font-weight: bold;
 }
 
 * {
@@ -15,12 +15,15 @@
 
 /*utility variables*/
 :root {
-  --brand-primary-dark-color: #121420;
-  --brand-tooltip-color: #191c29;
+  --brand-primary-dark-color: #1d1e2c;
   --brand-primary-light-color: #48cae4;
   --brand-primary-light-color-2: #90e0ef;
   --brand-primary-light-color-3: #caf0f8;
-  --brand-gradient-color: linear-gradient(85.28deg, var(--brand-primary-dark-color) 4.09%, #000000 98%);
+  --brand-gradient-color: linear-gradient(
+    85.28deg,
+    var(--brand-primary-dark-color) 4.09%,
+    #000000 98%
+  );
   --brand-secondary-color: #16679a;
   --brand-secondary-color-2: #1c558e;
 
@@ -37,6 +40,7 @@
 
 body {
   background: var(--brand-gradient-color) !important;
+  background-repeat: no-repeat;
 }
 .brand-primary-color {
   background: var(--brand-primary-light-color) !important;
@@ -105,9 +109,19 @@ body {
 /*default bootstrap navbar properties @overide*/
 
 .navbar-toggler:focus {
-  text-decoration: none;
-  outline: 0;
-  box-shadow: none;
+  text-decoration: none !important;
+  outline: 0 !important;
+  box-shadow: none !important;
+  color: var(--brand-white-color) !important;
+  border: none !important;
+}
+
+.nav-item {
+  cursor: pointer;
+  transition: 0.3s;
+}
+.nav-item:hover {
+  transform: scale(1.1);
 }
 
 /*Brand button styling*/
@@ -163,10 +177,6 @@ body {
   outline: 2px solid var(--brand-primary-light-color) !important;
   transition: 0.5s !important;
   color: var(--brand-white-color) !important;
-}
-
-body {
-  background: var(--brand-primary-dark-color);
 }
 
 /*custom responsiveness*/
