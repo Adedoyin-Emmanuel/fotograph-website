@@ -210,6 +210,10 @@ body {
     font-size: 17px; /* Font size for large screens */
   }
 }
+
+.image-transition {
+  transition: opacity 1.5s linear !important;
+}
 /*custom responsiveness*/
 @media (min-width: 667.98px) {
   .width-toggle {
