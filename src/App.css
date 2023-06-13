@@ -24,6 +24,27 @@
     var(--brand-primary-dark-color) 4.09%,
     #000000 98%
   );
+  --brand-radial-gradient-color: radial-gradient(
+      49.81% 49.81% at 50% 122.68%,
+      rgba(146, 180, 231, 0.2) 0%,
+      rgba(160, 195, 248, 0) 100%
+    ),
+    radial-gradient(
+      50.18% 50.18% at 50% 122.68%,
+      rgba(231, 222, 146, 0.15) 0%,
+      rgba(248, 239, 160, 0) 100%
+    ),
+    radial-gradient(
+      34.26% 34.26% at 50% 100%,
+      rgba(253, 166, 37, 0.05) 1.54%,
+      rgba(245, 163, 40, 0) 100%
+    ),
+    radial-gradient(
+      35.83% 29.71% at 50% 114.71%,
+      rgba(255, 255, 255, 0.2) 0%,
+      rgba(255, 255, 255, 0) 100%
+    );
+
   --brand-secondary-color: #16679a;
   --brand-secondary-color-2: #1c558e;
 
@@ -36,7 +57,21 @@
   --brand-button-outline-padding: 15px;
   --brand-grey-color: #7c7c7c;
 }
-
+.brand-glowing-container {
+  box-sizing: border-box;
+  margin: 0;
+  min-width: 0;
+  width: 100%;
+  height: 680px;
+  position: absolute;
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+  opacity: 0.5;
+  z-index: 0;
+  background: var(--brand-radial-gradient-color);
+}
 /*Brand primary utility classes*/
 
 body {

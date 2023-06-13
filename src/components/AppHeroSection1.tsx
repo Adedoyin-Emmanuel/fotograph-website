@@ -2,7 +2,11 @@ import React from "react";
 import { Container } from "react-bootstrap";
 import AppVideoSection from "./AppVideoSection";
 
-const AppHeroSection1: React.FC = (): JSX.Element => {
+
+interface AppHeroSection1Props{
+  children?: JSX.Element | JSX.Element[];
+}
+const AppHeroSection1: React.FC = ({children}: AppHeroSection1Props): JSX.Element => {
   return (
     <React.Fragment>
       <Container fluid className="m-auto py-4">
@@ -18,6 +22,8 @@ const AppHeroSection1: React.FC = (): JSX.Element => {
         </section>
 
         <AppVideoSection />
+        
+        {children}
       </Container>
     </React.Fragment>
   );
