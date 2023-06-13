@@ -22,7 +22,7 @@ const AppFeatures: React.FC = ({
   return (
     <Container className={`my-5 py-3 ${className}`}>
       <Row className="justify-content-md-center">
-        <Col md={4} xs={12} className="mb-4 mb-md-0">
+        <Col md={4} xs={12} className="mb-4 mb-md-0 pb-md-0 pb-4">
           <section className="box box1">
             <section className="feature-icon brand-icon-gradient-color p-3 px-4 rounded-3 shadow brand-icon-container m-auto d-flex align-items-center justify-content-center">
               <FontAwesomeIcon
@@ -43,7 +43,7 @@ const AppFeatures: React.FC = ({
             <section className="spacer my-4"></section>
           </section>
         </Col>
-        <Col md={4} xs={12} className="mb-4 ">
+        <Col md={4} xs={12} className="mb-4 pb-md-0 pb-4">
           <section className="box box2">
             <section className="feature-icon brand-icon-gradient-color p-3 px-4 rounded-3 shadow brand-icon-container m-auto d-flex align-items-center justify-content-center">
               <FontAwesomeIcon
@@ -64,7 +64,7 @@ const AppFeatures: React.FC = ({
             <section className="spacer my-4"></section>
           </section>
         </Col>
-        <Col md={4} xs={12} className="shadow-sm">
+        <Col md={4} xs={12} className=" pb-md-0 pb-4">
           <section className="box box3">
             <section className="feature-icon brand-icon-gradient-color p-3 px-4 rounded-3 shadow brand-icon-container m-auto d-flex align-items-center justify-content-center">
               <FontAwesomeIcon
@@ -87,7 +87,7 @@ const AppFeatures: React.FC = ({
           </section>
         </Col>
         <section className="spacer my-3"></section>
-        <Col md={4} xs={12} className="mb-4 mb-md-0">
+        <Col md={4} xs={12} className="mb-4 mb-md-0 pb-md-0 pb-4">
           <section className="box box1">
             <section className="feature-icon brand-icon-gradient-color p-3 px-4 rounded-3 shadow brand-icon-container m-auto d-flex align-items-center justify-content-center">
               <FontAwesomeIcon
@@ -109,7 +109,7 @@ const AppFeatures: React.FC = ({
             <section className="spacer my-4"></section>
           </section>
         </Col>
-        <Col md={4} xs={12} className="mb-4">
+        <Col md={4} xs={12} className="mb-4 pb-md-0 pb-4">
           <section className="box box2">
             <section className="feature-icon brand-icon-gradient-color p-3 px-4 rounded-3 shadow brand-icon-container m-auto d-flex align-items-center justify-content-center">
               <FontAwesomeIcon
@@ -130,7 +130,7 @@ const AppFeatures: React.FC = ({
             <section className="spacer my-4"></section>
           </section>
         </Col>
-        <Col md={4} xs={12}>
+        <Col md={4} xs={12} className="pb-md-0 pb-4">
           <section className="box box3">
             <section className="feature-icon brand-icon-gradient-color p-3 px-4 rounded-3 shadow brand-icon-container m-auto d-flex align-items-center justify-content-center">
               <FontAwesomeIcon
