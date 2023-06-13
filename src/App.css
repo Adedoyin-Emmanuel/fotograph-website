@@ -24,6 +24,13 @@
     var(--brand-primary-dark-color) 4.09%,
     #000000 98%
   );
+  --brand-icon-gradient-color: linear-gradient(
+    45deg,
+    #73c3e2 -10%,
+    #b9c0a5 34.99%,
+    #f0c79f 67.28%,
+    #f7f7f7 110%
+  );
   --brand-radial-gradient-color: radial-gradient(
       49.81% 49.81% at 50% 122.68%,
       rgba(146, 180, 231, 0.2) 0%,
@@ -81,6 +88,15 @@ body {
 
 .brand-gradient-color {
   background: var(--brand-gradient-color) !important;
+}
+
+.brand-icon-gradient-color {
+  background: var(--brand-icon-gradient-color) !important;
+}
+
+.brand-icon-container {
+  width: 55px !important;
+  height: 50px !important;
 }
 .brand-primary-color {
   background: var(--brand-primary-light-color) !important;
@@ -248,6 +264,45 @@ body {
 
 .image-transition {
   transition: opacity 1.5s linear !important;
+}
+
+.box {
+  background-color: var(--brand-primary-dark-color) !important;
+  color: var(--brand-white-color) !important;
+  cursor: pointer;
+  padding: 20px;
+  border-radius: 16px;
+  text-align: center;
+}
+
+.box1 {
+  background-color: #f8f8f8;
+  transform: translateY(10px);
+}
+
+.box2 {
+  background-color: #e8e8e8;
+  transform: translateY(-40px);
+}
+
+.box3 {
+  background-color: #d8d8d8;
+}
+
+.app-feature-text {
+  display: block !important;
+  box-sizing: border-box !important;
+  opacity: 0.7 !important;
+}
+
+@media (max-width: 767px) {
+  .box2 {
+    transform: translateY(0);
+  }
+
+  .box1 {
+    transform: translateY(0);
+  }
 }
 /*custom responsiveness*/
 @media (min-width: 667.98px) {
