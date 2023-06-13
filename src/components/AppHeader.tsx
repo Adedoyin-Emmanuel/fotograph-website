@@ -5,13 +5,16 @@ import { Link } from "react-router-dom";
 const AppHeader: React.FC = (): JSX.Element => {
   return (
     <React.Fragment>
-      <nav className={`navbar navbar-expand-lg`} aria-label="Fotograph Header">
-        <div className="container-fluid">
+      <nav
+        className={`navbar navbar-expand-lg p-0`}
+        aria-label="Fotograph Header"
+      >
+        <div className="container-fluid p-0">
           <img
             src={LogoText}
-            className="img-fluid"
-            height="30"
-            width="170"
+            className="img-fluid  p-0 m-0"
+            height={170}
+            width={170}
             alt="site-logo"
           />
 

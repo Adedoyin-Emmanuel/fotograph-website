@@ -43,6 +43,10 @@ body {
   background: var(--brand-gradient-color) !important;
   background-repeat: no-repeat;
 }
+
+.brand-gradient-color {
+  background: var(--brand-gradient-color) !important;
+}
 .brand-primary-color {
   background: var(--brand-primary-light-color) !important;
 }
@@ -194,10 +198,11 @@ body {
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  word-spacing: 2px;
 }
 
 .brand-small-text-3 {
-  font-size: 15px; /* Default font size for mobile phones */
+  font-size: 14px; /* Default font size for mobile phones */
 }
 
 @media (min-width: 768px) {
