@@ -40,7 +40,7 @@ const AppFaq: React.FC = (): JSX.Element => {
       </Accordion>
 
       <Accordion
-        defaultActiveKey={"1"}
+        defaultActiveKey={"2"}
         className={`app-accordion bg-transparent 3 my-4 shadow`}
       >
         <Accordion.Item eventKey={"1"} className="brand-primary-bg-color">
@@ -57,7 +57,7 @@ const AppFaq: React.FC = (): JSX.Element => {
       </Accordion>
 
       <Accordion
-        defaultActiveKey={"2"}
+        defaultActiveKey={"3"}
         className={`app-accordion bg-transparent 3 my-4 shadow`}
       >
         <Accordion.Item eventKey={"1"} className="brand-primary-bg-color">
