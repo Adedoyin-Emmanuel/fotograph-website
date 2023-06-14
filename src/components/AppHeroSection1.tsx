@@ -1,12 +1,14 @@
 import React from "react";
 import { Container } from "react-bootstrap";
 import AppVideoSection from "./AppVideoSection";
-
-
-interface AppHeroSection1Props{
+import { Button } from "react-bootstrap";
+import { Link } from "react-router-dom";
+interface AppHeroSection1Props {
   children?: JSX.Element | JSX.Element[];
 }
-const AppHeroSection1: React.FC = ({children}: AppHeroSection1Props): JSX.Element => {
+const AppHeroSection1: React.FC = ({
+  children,
+}: AppHeroSection1Props): JSX.Element => {
   return (
     <React.Fragment>
       <Container fluid className="m-auto py-4">
@@ -21,8 +23,15 @@ const AppHeroSection1: React.FC = ({children}: AppHeroSection1Props): JSX.Elemen
           </p>
         </section>
 
+        <section className="explore-button m-auto d-flex align-items-center justify-content-center p-4">
+          <Button className="brand-download-button border-0 width-toggle-6 text-muted fs-5">
+            <Link to="download" className="text-decoration-none text-muted">
+              Download
+            </Link>{" "}
+          </Button>
+        </section>
         <AppVideoSection />
-        
+
         {children}
       </Container>
     </React.Fragment>

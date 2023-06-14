@@ -227,6 +227,18 @@ body {
   padding: 13px;
 }
 
+.brand-explore-button,
+.brand-download-button {
+  width: 100%;
+  background: var(--brand-icon-gradient-color) !important;
+  border-radius: 100px !important;
+  cursor: pointer;
+}
+
+.brand-download-button {
+  padding: 13px !important;
+}
+
 .brand-button-4 {
   padding: calc(var(--brand-button-outline-padding) - 5px);
 }
@@ -299,7 +311,7 @@ body {
   background: var(--brand-radial-gradient-color);
   filter: blur(10px); /* Adjust the blur radius as needed */
   z-index: 1;
-  
+
   width: 100px;
   height: 100px;
 }
