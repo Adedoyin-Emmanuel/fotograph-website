@@ -12,7 +12,7 @@ const AppFaq: React.FC = (): JSX.Element => {
         defaultActiveKey={"0"}
         className={`app-accordion bg-transparent 3 my-4 shadow`}
       >
-        <Accordion.Item eventKey={"1"} className="brand-primary-bg-color">
+        <Accordion.Item eventKey={"0"} className="brand-primary-bg-color">
           <Accordion.Header className="bg-transparent brand-white-text text-capitailize p-2 brand-small-text-3">
             What is Fotograph?
           </Accordion.Header>
@@ -43,7 +43,7 @@ const AppFaq: React.FC = (): JSX.Element => {
         defaultActiveKey={"2"}
         className={`app-accordion bg-transparent 3 my-4 shadow`}
       >
-        <Accordion.Item eventKey={"1"} className="brand-primary-bg-color">
+        <Accordion.Item eventKey={"2"} className="brand-primary-bg-color">
           <Accordion.Header className="bg-transparent brand-white-text text-capitailize p-2 brand-small-text-3">
             Is Fotograph open source?
           </Accordion.Header>
@@ -60,7 +60,7 @@ const AppFaq: React.FC = (): JSX.Element => {
         defaultActiveKey={"3"}
         className={`app-accordion bg-transparent 3 my-4 shadow`}
       >
-        <Accordion.Item eventKey={"1"} className="brand-primary-bg-color">
+        <Accordion.Item eventKey={"3"} className="brand-primary-bg-color">
           <Accordion.Header className="bg-transparent brand-white-text text-capitailize p-2 brand-small-text-3">
             How can i contribute to the project?
           </Accordion.Header>
