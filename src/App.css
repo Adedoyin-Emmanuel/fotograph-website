@@ -295,6 +295,14 @@ body {
   opacity: 0.7 !important;
 }
 
+.glow-section {
+  background: var(--brand-radial-gradient-color);
+  filter: blur(10px); /* Adjust the blur radius as needed */
+  z-index: 1;
+  
+  width: 100px;
+  height: 100px;
+}
 @media (max-width: 767px) {
   .box2 {
     transform: translateY(0);

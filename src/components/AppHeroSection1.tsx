@@ -15,7 +15,7 @@ const AppHeroSection1: React.FC = ({children}: AppHeroSection1Props): JSX.Elemen
         </h1>
 
         <section className="text-container m-auto width-toggle  text-center d-flex align-items-center justify-content-center">
-          <p className="text-center brand-text-muted brand-small-text-3 my-4 px-md-1 px-3">
+          <p className="text-center brand-text-muted brand-small-text-3 my-4 px-md-1 px-2">
             FotoGraph brings most image manipulation tools we use online to a
             single offline application.
           </p>

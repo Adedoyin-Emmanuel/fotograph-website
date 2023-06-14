@@ -5,7 +5,7 @@ const AppHeroSection2: React.FC = (): JSX.Element => {
   return (
     <React.Fragment>
       <Container fluid className="my-5">
-        <h1 className="display-6 text-md-center text-start text-capitalize brand-heading-text fw-bold my-3 m-0 w-100">
+        <h1 className="display-5 text-center text-capitalize brand-heading-text fw-bold my-3 m-0 w-100">
           All the tools you need, in one place
         </h1>
         <AppFeatures></AppFeatures>
