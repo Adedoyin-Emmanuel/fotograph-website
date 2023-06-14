@@ -19,7 +19,7 @@ const AppHeroSection1: React.FC = ({
   return (
     <React.Fragment>
       <Container fluid className="m-auto py-4">
-        <h1 className=" display-3 text-center text-capitalize brand-heading-text fw-bold my-3 m-0 w-100">
+        <h1 className=" display-3 text-center text-capitalize brand-heading-text fw-bold my-3 m-0 w-100 animate__animated animate__bounceIn">
           A tool for image manipulation
         </h1>
 

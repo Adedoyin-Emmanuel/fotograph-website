@@ -3,7 +3,11 @@ import { Container, Accordion } from "react-bootstrap";
 import { Link } from "react-router-dom";
 const AppFaq: React.FC = (): JSX.Element => {
   return (
-    <Container className="width-toggle-5 my-4">
+    <Container
+      className="width-toggle-5 my-4"
+      data-aos="zoom-in"
+      data-aos-duration="1000"
+    >
       <h1 className="display-5 text-center text-capitalize brand-heading-text fw-bold my-3 m-0 w-100">
         FAQ
       </h1>

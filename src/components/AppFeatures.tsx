@@ -23,7 +23,11 @@ const AppFeatures: React.FC = ({
     <Container className={`my-5 py-3 ${className}`}>
       <Row className="justify-content-md-center">
         <Col md={4} xs={12} className="mb-4 mb-md-0 pb-md-0 pb-4">
-          <section className="box box1">
+          <section
+            className="box box1"
+            data-aos="flip-up"
+            data-aos-duration="1000"
+          >
             <section className="feature-icon brand-icon-gradient-color p-3 px-4 rounded-3 shadow brand-icon-container m-auto d-flex align-items-center justify-content-center">
               <FontAwesomeIcon
                 icon={faRecycle}
@@ -65,7 +69,11 @@ const AppFeatures: React.FC = ({
           </section>
         </Col>
         <Col md={4} xs={12} className=" pb-md-0 pb-4">
-          <section className="box box3">
+          <section
+            className="box box3"
+            data-aos="zoom-in"
+            data-aos-duration="1500"
+          >
             <section className="feature-icon brand-icon-gradient-color p-3 px-4 rounded-3 shadow brand-icon-container m-auto d-flex align-items-center justify-content-center">
               <FontAwesomeIcon
                 icon={faMagnifyingGlass}
@@ -88,7 +96,11 @@ const AppFeatures: React.FC = ({
         </Col>
         <section className="spacer my-3"></section>
         <Col md={4} xs={12} className="mb-4 mb-md-0 pb-md-0 pb-4">
-          <section className="box box1">
+          <section
+            className="box box1"
+            data-aos="flip-left"
+            data-aos-duration="2000"
+          >
             <section className="feature-icon brand-icon-gradient-color p-3 px-4 rounded-3 shadow brand-icon-container m-auto d-flex align-items-center justify-content-center">
               <FontAwesomeIcon
                 icon={faMinimize}
@@ -131,7 +143,11 @@ const AppFeatures: React.FC = ({
           </section>
         </Col>
         <Col md={4} xs={12} className="pb-md-0 pb-4">
-          <section className="box box3">
+          <section
+            className="box box3"
+            data-aos="flip-right"
+            data-aos-duration="2000"
+          >
             <section className="feature-icon brand-icon-gradient-color p-3 px-4 rounded-3 shadow brand-icon-container m-auto d-flex align-items-center justify-content-center">
               <FontAwesomeIcon
                 icon={faBoltLightning}

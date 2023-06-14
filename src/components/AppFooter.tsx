@@ -13,7 +13,11 @@ const AppFooter: React.FC = (): JSX.Element => {
   const currentYear = new Date().getFullYear();
   return (
     <Container className="my-5 py-5">
-      <h1 className=" display-1 text-start text-capitalize brand-heading-text fw-bold my-3 m-0 w-100">
+      <h1
+        className=" display-1 text-start text-capitalize brand-heading-text fw-bold my-3 m-0 w-100"
+        data-aos="zoom-in-up"
+        data-aos-duration="1000"
+      >
         Build
         <br />
         Way Faster
