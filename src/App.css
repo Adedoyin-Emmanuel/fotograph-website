@@ -184,6 +184,33 @@ body {
   transform: scale(1.1);
 }
 
+/* Override the default Bootstrap styles for the accordion */
+.accordion-item {
+  background-color: var(--brand-primary-dark-color) !important;
+  color: var(--brand-white-color) !important;
+  border: none;
+  box-shadow: none !important;
+}
+
+.accordion-button {
+  background: var(--brand-primary-dark-color);
+  color: var(--brand-white-color);
+  box-shadow: none !important;
+}
+
+.accordion-button:not(.collapsed) {
+  color: var(--brand-white-color) !important;
+  background: var(--brand-primary-dark-color) !important;
+  box-shadow: none !important;
+}
+
+/* Set the color of visited accordion buttons */
+.accordion-button:focus,
+.accordion-button:hover {
+  color: var(--brand-white-color) !important;
+  box-shadow: none !important;
+}
+
 /*Brand button styling*/
 
 .brand-button,
