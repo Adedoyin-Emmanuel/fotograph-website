@@ -3,6 +3,8 @@ import { Container } from "react-bootstrap";
 import AppVideoSection from "./AppVideoSection";
 import { Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faDownload } from "@fortawesome/free-solid-svg-icons";
 interface AppHeroSection1Props {
   children?: JSX.Element | JSX.Element[];
 }
@@ -26,7 +28,7 @@ const AppHeroSection1: React.FC = ({
         <section className="explore-button m-auto d-flex align-items-center justify-content-center p-4">
           <Button className="brand-download-button border-0 width-toggle-6 text-muted fs-5">
             <Link to="download" className="text-decoration-none text-muted">
-              Download
+              <FontAwesomeIcon icon={faDownload} /> Download
             </Link>{" "}
           </Button>
         </section>
