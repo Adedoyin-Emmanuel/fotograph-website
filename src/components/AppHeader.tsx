@@ -1,8 +1,13 @@
 import React from "react";
 import LogoText from "./../assets/logo-text.png";
-
+import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 const AppHeader: React.FC = (): JSX.Element => {
+  const navigateTo = useNavigate();
+
+  const handleLogoImgClick = () => {
+    navigateTo("/");
+  };
   return (
     <React.Fragment>
       <nav
@@ -12,10 +17,11 @@ const AppHeader: React.FC = (): JSX.Element => {
         <div className="container-fluid p-0">
           <img
             src={LogoText}
-            className="img-fluid  p-0 m-0"
+            className="img-fluid p-0 m-0 fotograph-header-logo"
             height={170}
             width={170}
             alt="site-logo"
+            onClick={handleLogoImgClick}
           />
 
           <button
@@ -55,16 +61,17 @@ const AppHeader: React.FC = (): JSX.Element => {
 
               <li className="nav-item mx-md-5 mx-4 my-md-0 my-3">
                 <Link
-                  to="/about"
+                  to="/download"
                   className="text-decoration-none brand-white-text text-capitalize"
                 >
-                  about
+                  download
                 </Link>
               </li>
 
               <li className="nav-item mx-md-5 mx-4 my-md-0 my-3">
                 <Link
-                  to="/support"
+                  to="https://github.com/Adedoyin-Emmanuel/Fotograph"
+                  target="_blank"
                   className="text-decoration-none brand-white-text text-capitalize"
                 >
                   support

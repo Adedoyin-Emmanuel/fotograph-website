@@ -2,7 +2,7 @@ import React from "react";
 import { Container } from "react-bootstrap";
 import AppVideoSection from "./AppVideoSection";
 import { Button } from "react-bootstrap";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDownload } from "@fortawesome/free-solid-svg-icons";
 interface AppHeroSection1Props {
@@ -11,6 +11,11 @@ interface AppHeroSection1Props {
 const AppHeroSection1: React.FC = ({
   children,
 }: AppHeroSection1Props): JSX.Element => {
+  const navigateTo = useNavigate();
+
+  const handleDownloadClick = () => {
+    navigateTo("/download");
+  };
   return (
     <React.Fragment>
       <Container fluid className="m-auto py-4">
@@ -26,7 +31,10 @@ const AppHeroSection1: React.FC = ({
         </section>
 
         <section className="explore-button m-auto d-flex align-items-center justify-content-center p-4">
-          <Button className="brand-download-button border-0 width-toggle-6 text-muted fs-5">
+          <Button
+            className="brand-download-button border-0 width-toggle-6 text-muted fs-5"
+            onClick={handleDownloadClick}
+          >
             <Link to="download" className="text-decoration-none text-muted">
               <FontAwesomeIcon icon={faDownload} /> Download
             </Link>{" "}

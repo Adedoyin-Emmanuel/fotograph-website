@@ -173,6 +173,15 @@ body {
   transform: scale(1.1);
 }
 
+.not-found-container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
 /* Override the default Bootstrap styles for the accordion */
 .accordion-item {
   background-color: var(--brand-primary-dark-color) !important;
@@ -203,7 +212,8 @@ body {
 /*Brand button styling*/
 
 .brand-explore-button,
-.brand-download-button {
+.brand-download-button,
+.brand-route-home-button {
   width: 100%;
   background: var(--brand-icon-gradient-color) !important;
   border-radius: 100px !important;
@@ -273,7 +283,19 @@ body {
 
 .fotograph-logo {
   transform: translateX(-22px) !important;
+  cursor: pointer;
 }
+
+.fotograph-header-logo {
+  cursor: pointer;
+}
+.footer-social-icons {
+  transition: 0.6s;
+}
+.footer-social-icons:hover {
+  transform: scale(1.2) !important;
+}
+
 @media (max-width: 767px) {
   .box2 {
     transform: translateY(0);
