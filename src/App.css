@@ -208,9 +208,6 @@ body {
   background: var(--brand-icon-gradient-color) !important;
   border-radius: 100px !important;
   cursor: pointer;
-}
-
-.brand-download-button {
   padding: 13px !important;
 }
 
