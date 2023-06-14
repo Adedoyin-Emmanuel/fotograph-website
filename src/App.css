@@ -63,6 +63,7 @@
   --brand-search-border-radius: 50px;
   --brand-button-outline-padding: 15px;
   --brand-grey-color: #7c7c7c;
+  --brand-grey-color-2: #939393;
 }
 .brand-glowing-container {
   box-sizing: border-box;
@@ -136,18 +137,6 @@ body {
 
 /*Brand secondary utility classes*/
 
-.brand-secondary-color {
-  background: var(--brand-secondary-color);
-}
-
-.brand-tooltip-color {
-  background: var(--brand-tooltip-color) !important;
-}
-
-.brand-secondary-color-2 {
-  background: var(--brand-secondary-color-2);
-}
-
 .brand-white-text {
   color: var(--brand-white-color);
 }
@@ -213,47 +202,6 @@ body {
 
 /*Brand button styling*/
 
-.brand-button,
-.brand-button-2,
-.brand-button-3,
-.brand-white-button,
-.brand-button-outline {
-  border-radius: var(--brand-button-border-radius);
-  outline: none;
-  border: 0;
-  text-transform: capitalize;
-  background: var(--brand-primary-light-color) !important;
-  padding: 10px;
-  width: 60%;
-  cursor: pointer;
-  transition: 0.6s;
-  filter: brightness(0.9);
-}
-.brand-button:hover,
-.brand-button:active {
-  background: var(--brand-primary-light-color) !important;
-  filter: brightness(1.1);
-}
-.brand-button-2 {
-  padding: 15px;
-}
-
-.brand-white-button {
-  background: var(--brand-white-color);
-  padding: 13px;
-  transition: 0.3s;
-}
-
-.brand-white-button:hover,
-.brand-white-button:active {
-  background: var(--brand-primary-light-color) !important;
-  color: var(--brand-white-color) !important;
-}
-
-.brand-button-3 {
-  padding: 13px;
-}
-
 .brand-explore-button,
 .brand-download-button {
   width: 100%;
@@ -264,18 +212,6 @@ body {
 
 .brand-download-button {
   padding: 13px !important;
-}
-
-.brand-button-4 {
-  padding: calc(var(--brand-button-outline-padding) - 5px);
-}
-
-.brand-button-outline {
-  background: none !important;
-  padding: calc(var(--brand-button-outline-padding) - 5px) !important;
-  outline: 2px solid var(--brand-primary-light-color) !important;
-  transition: 0.5s !important;
-  color: var(--brand-white-color) !important;
 }
 
 .brand-heading-text {
@@ -334,13 +270,12 @@ body {
   opacity: 0.7 !important;
 }
 
-.glow-section {
-  background: var(--brand-radial-gradient-color);
-  filter: blur(10px); /* Adjust the blur radius as needed */
-  z-index: 1;
+.brand-copyright-text {
+  color: var(--brand-grey-color-2) !important;
+}
 
-  width: 100px;
-  height: 100px;
+.fotograph-logo {
+  transform: translateX(-22px) !important;
 }
 @media (max-width: 767px) {
   .box2 {
@@ -349,6 +284,13 @@ body {
 
   .box1 {
     transform: translateY(0);
+  }
+  .fotograph-logo {
+    transform: translate(-20px, 45px) !important;
+  }
+  .fotograph-logo,
+  .social-icons-container {
+    transform: translateX(-15px);
   }
 }
 /*custom responsiveness*/

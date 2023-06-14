@@ -4,7 +4,7 @@ import AppHeroSection1 from "../components/AppHeroSection1";
 import AppHeroSection2 from "../components/AppHeroSection2";
 import AppHeroSection3 from "../components/AppHeroSection3";
 import AppFaq from "../components/AppFaq";
-
+import AppFooter from "../components/AppFooter";
 const Home: React.FC = (): JSX.Element => {
   return (
     <React.Fragment>
@@ -19,6 +19,7 @@ const Home: React.FC = (): JSX.Element => {
         <AppFaq></AppFaq>
 
         <section className="spacer my-3 py-2"></section>
+        <AppFooter></AppFooter>
       </section>
     </React.Fragment>
   );
