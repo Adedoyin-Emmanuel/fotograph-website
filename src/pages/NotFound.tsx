@@ -1,8 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import { Button } from "react-bootstrap";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLocation } from "@fortawesome/free-solid-svg-icons";
+import LostIcon from "./../assets/lost.svg";
 
 const NotFound: React.FC = (): JSX.Element => {
   const navigateTo = useNavigate();
@@ -21,7 +20,16 @@ const NotFound: React.FC = (): JSX.Element => {
           the page you requested for was not found{" "}
         </p>
       </section>
-    <FontAwesomeIcon icon={faLocation}></FontAwesomeIcon>
+
+      <section className="lost-icon">
+        <img
+          src={LostIcon}
+          alt="not-found-icon"
+          className="img-fluid"
+          width={200}
+          height={200}
+        />
+      </section>
       <section className="button-container d-flex align-items-center justify-content-center w-100 p-md-0 p-5">
         <Button
           className="brand-route-home-button border-0 width-toggle-6 text-muted fs-5"
