@@ -34,11 +34,32 @@ const AppFaq: React.FC = (): JSX.Element => {
       >
         <Accordion.Item eventKey={"1"} className="brand-primary-bg-color">
           <Accordion.Header className="bg-transparent brand-white-text text-capitailize p-2 brand-small-text-3">
-            Is Fotograph free?
+            What makes Fotograph different?
           </Accordion.Header>
 
           <Accordion.Body className="brand-small-text">
-            Yes it is absolutely free!
+            Great question chief, now unlike most online image manipulation
+            tools, they don't support batch processing, meaning you can't edit
+            more than 2 or max 12 pictures at once, but with Fotograph, you can
+            process multiple images at once, no limitations, coupled with the
+            fact Fotograph works offline.
+          </Accordion.Body>
+        </Accordion.Item>
+      </Accordion>
+      <Accordion
+        defaultActiveKey={"0"}
+        className={`app-accordion bg-transparent 3 my-4 shadow`}
+      >
+        <Accordion.Item eventKey={"2"} className="brand-primary-bg-color">
+          <Accordion.Header className="bg-transparent brand-white-text text-capitailize p-2 brand-small-text-3">
+            Why should I use Fotograph?
+          </Accordion.Header>
+
+          <Accordion.Body className="brand-small-text">
+            Nice question, you should use Fotograph because it is free, it comes
+            with most of the tools you need for image manipulation, it has a
+            simple yet powerful user interface and it is open source, meaning
+            other developers can collaborate and improve this application.
           </Accordion.Body>
         </Accordion.Item>
       </Accordion>
@@ -47,7 +68,22 @@ const AppFaq: React.FC = (): JSX.Element => {
         defaultActiveKey={"0"}
         className={`app-accordion bg-transparent 3 my-4 shadow`}
       >
-        <Accordion.Item eventKey={"2"} className="brand-primary-bg-color">
+        <Accordion.Item eventKey={"3"} className="brand-primary-bg-color">
+          <Accordion.Header className="bg-transparent brand-white-text text-capitailize p-2 brand-small-text-3">
+            Is Fotograph free?
+          </Accordion.Header>
+
+          <Accordion.Body className="brand-small-text">
+            Yes it is absolutely free.
+          </Accordion.Body>
+        </Accordion.Item>
+      </Accordion>
+
+      <Accordion
+        defaultActiveKey={"0"}
+        className={`app-accordion bg-transparent 3 my-4 shadow`}
+      >
+        <Accordion.Item eventKey={"4"} className="brand-primary-bg-color">
           <Accordion.Header className="bg-transparent brand-white-text text-capitailize p-2 brand-small-text-3">
             Is Fotograph open source?
           </Accordion.Header>
@@ -64,7 +100,7 @@ const AppFaq: React.FC = (): JSX.Element => {
         defaultActiveKey={"0"}
         className={`app-accordion bg-transparent 3 my-4 shadow`}
       >
-        <Accordion.Item eventKey={"3"} className="brand-primary-bg-color">
+        <Accordion.Item eventKey={"5"} className="brand-primary-bg-color">
           <Accordion.Header className="bg-transparent brand-white-text text-capitailize p-2 brand-small-text-3">
             How can i contribute to the project?
           </Accordion.Header>
