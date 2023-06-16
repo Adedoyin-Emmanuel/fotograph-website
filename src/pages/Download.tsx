@@ -9,26 +9,24 @@ import LinuxLogo from "./../assets/linux-logo.png";
 import Swal from "sweetalert2";
 
 const Download: React.FC = (): JSX.Element => {
-  const navigateTo = useNavigate();
-
   const handleWindowsDownload = () => {
-    navigateTo(
-      "https://github.com/Adedoyin-Emmanuel/FotoGraph/releases/download/v0.1.0-alpha/Fotograph.Setup.1.0.0.exe"
-    );
+    window.location.href =
+      "https://github.com/Adedoyin-Emmanuel/FotoGraph/releases/download/v0.1.0-alpha/Fotograph.Setup.1.0.0.exe";
   };
 
   const handleLinuxDownload = () => {
-    navigateTo(
-      "https://github.com/Adedoyin-Emmanuel/FotoGraph/releases/download/v0.1.0-alpha/Fotograph_1.0.0_amd64.deb"
-    );
+    window.location.href =
+      "https://github.com/Adedoyin-Emmanuel/FotoGraph/releases/download/v0.1.0-alpha/Fotograph_1.0.0_amd64.deb";
   };
 
   const handleMacDownload = () => {
     Swal.fire({
       toast: true,
-      text: "Fotograph would be available for Mac Os soon.",
+      position: "top",
+      showConfirmButton: false,
+      text: "Not available for MacOS.",
       icon: "info",
-      timer: 5000,
+      timer: 3000,
     });
   };
   return (
